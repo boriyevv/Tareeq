@@ -9,10 +9,12 @@ scrollWrapper.addEventListener('scroll', ()=>{
         nav.classList.add('scrolled')
         nav.style.background = 'white'
         header.style.background = 'white'
+        scrollWrapper.style.background = 'white'
     }else{
         nav.classList.remove('scrolled')
         nav.style.background = '#24CCA8'
         header.style.background = '#24CCA8'
+        scrollWrapper.style.background = '#24CCA8'
         
     }
 })
