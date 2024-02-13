@@ -65,7 +65,7 @@ header{
 .scroll-wrapper {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
+    height: 650px;
 }
 
 .scroll {
@@ -381,7 +381,7 @@ nav.scrolled .nav-link:after{
 
 /* =============================== main end ======================= */
 footer {
-    margin-top: 150px;
+    /* margin-top: 150px; */
     background-color: #0F172A;
 
 }
