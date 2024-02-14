@@ -26,9 +26,9 @@
 :root {
     /*  containers  */
 
-    --container-lg: 1440px;
-    --nav-lg:1500px;
-
+    --container-lg: 90%;
+    --nav-lg:90%;
+    --nav-link-color : white;
     /* colors  */
     --color-primary: #24CCA8;
     --color-secondary: white;
@@ -55,7 +55,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 header{
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
     transition: all 0.5s ease-in-out;
 }
 
@@ -109,9 +109,9 @@ nav {
 /* nav.scrolled{
     background: white;
 } */
-nav.scrolled header{
+/* nav.scrolled header{
     background-color: white;
-}
+} */
 
 
 
@@ -135,30 +135,30 @@ nav.scrolled header{
 
 .nav-link {
     position: relative;
-    color: var(--color-secondary);
+    color: var(--nav-link-color);
     font-size: 20px;
     padding-bottom: 4px;
     /* border-bottom: 4px solid var(--color-primary); */
     transition: all 0.5 ease-in-out;
 }
 
-nav.scrolled .nav-link{
+/* nav.scrolled .nav-link{
     color: #24CCA8;
-}
+} */
 
 nav.scrolled .logo{
     color: #24CCA8;
 }
 
-nav.scrolled .nav-btn{
-    border: 2px solid var(--color-primary);
+/* nav.scrolled .nav-btn{
+    border: 2px solid var(--nav-link-color);
     color: #24CCA8;
-}
+} */
 
 .nav-link:after {
     content: "";
     position: absolute;
-    background-color: var(--color-secondary);
+    background-color: var(--nav-link-color);
     height: 4px;
     width: 0;
     left: 0;
@@ -166,9 +166,10 @@ nav.scrolled .nav-btn{
     transition: 0.5s;
 }
 
-nav.scrolled .nav-link:after{
+/* nav.scrolled .nav-link:after{
     background-color: var(--color-primary);
-}
+} */
+
 
 .nav-link:hover {
     color: var(--color-secondary);
@@ -185,7 +186,7 @@ nav.scrolled .nav-link:after{
     padding: 12px 0;
     color: black;
     text-align: center;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--nav-link-color);
     border-radius: 24px;
     background-color: var(--color-secondary);
 }
